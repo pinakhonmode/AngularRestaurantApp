@@ -60,17 +60,47 @@ To run tests with Cursor AI or Claude Desktop using the Playwright MCP Server:
 
 ### 1. Install Playwright MCP Server
 
-```bash
-npx -y @executeautomation/playwright-mcp-server
-```
+https://smithery.ai/server/@executeautomation/playwright-mcp-server
 
-### 2. Start the MCP Server
+Installation
+You can install the package using either npm, mcp-get, or Smithery:
 
-```bash
-npx @executeautomation/playwright-mcp-server
-```
+Using npm:
 
-This opens up a browser session which Cursor AI or Claude Desktop can connect to.
+npm install -g @executeautomation/playwright-mcp-server
+Using mcp-get:
+
+npx @michaellatman/mcp-get@latest install @executeautomation/playwright-mcp-server
+Using Smithery
+
+To install Playwright MCP for Claude Desktop automatically via Smithery:
+
+npx @smithery/cli install @executeautomation/playwright-mcp-server --client claude
+Installation in VS Code
+Install the Playwright MCP server in VS Code using one of these buttons:
+
+Install in VS Code Install in VS Code Insiders
+
+Alternatively, you can install the Playwright MCP server using the VS Code CLI:
+
+# For VS Code
+code --add-mcp '{"name":"playwright","command":"npx","args":["@executeautomation/playwright-mcp-server"]}'
+# For VS Code Insiders
+code-insiders --add-mcp '{"name":"playwright","command":"npx","args":["@executeautomation/playwright-mcp-server"]}'
+After installation, the ExecuteAutomation Playwright MCP server will be available for use with your GitHub Copilot agent in VS Code.
+
+Configuration to use Playwright Server
+Here's the Claude Desktop configuration to use the Playwright server:
+
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@executeautomation/playwright-mcp-server"]
+    }
+  }
+}
+
 
 ### 3. Interact via Cursor AI
 
