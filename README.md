@@ -1,6 +1,6 @@
 # 🍽️ RestaurantApp – Playwright MCP Automated Testing
 
-A test automation project for validating login and logout flows in the [RestaurantAppAngular](https://github.com/pinakhonmode/RestaurantAppAngular) repository using **Playwright** and the **Model Context Protocol (MCP)** with **Cursor AI**.
+A test automation project for validating login and logout flows in the [RestaurantAppAngular]([https://github.com/pinakhonmode/AngularRestaurantApp]) repository using **Playwright** and the **Model Context Protocol (MCP)** with **Cursor AI**.
 
 This project leverages Playwright to simulate real user behavior in a browser, and the MCP server enables Cursor (or Claude Desktop) to perform live interaction with your application.
 
